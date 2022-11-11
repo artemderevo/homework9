@@ -65,7 +65,7 @@ public class Main {
         numbersA[1] = 2;
         numbersA[2] = 3;
         for (int i = 0; i < 3; i++) {
-            System.out.println(numbersA[i]+1);
+            System.out.println(numbersA[i]+ 1);
         }
 
 
