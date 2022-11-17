@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         // Задача 1, задание 1.
-        int[] numbers = new int [3];
+        int[] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
@@ -20,57 +20,68 @@ public class Main {
         }
         System.out.println("");
         // Задача 2.
-        int[] numbersQ = new int [3];
+        int[] numbersQ = new int[3];
         numbersQ[0] = 1;
         numbersQ[1] = 2;
         numbersQ[2] = 3;
-        {
-            System.out.print(numbersQ[0] + ", " + numbersQ[1] + ", " + numbersQ[2]);
+        for (int i = 0; i < numbersQ.length; i++) {
+            if (i == numbersQ.length - 1) {
+                System.out.println(numbersQ[i]);
+            } else System.out.print(numbersQ[i] + ", ");
         }
-        System.out.println("");
         double[] numbersW = {1.57, 7.654, 9.986};
-        {
-            System.out.print(numbersW[0] + ", " + numbersW[1] + ", " + numbersW[2]);
+        for (int i = 0; i < numbersW.length; i++) {
+            if (i == numbersW.length - 1) {
+                System.out.println(numbersW[i]);
+            } else System.out.print(numbersW[i] + ", ");
         }
-        System.out.println("");
         int[] numbersE = {4, 5, 6};
-        {
-            System.out.print(numbersE[0] + ", " + numbersE[1] + ", " + numbersE[2]);
+        for (int i = 0; i < numbersE.length; i++) {
+            if (i == numbersE.length - 1) {
+                System.out.println(numbersE[i]);
+            } else System.out.print(numbersE[i] + ", ");
         }
-        System.out.println("");
+
         // Задача 3.
         System.out.println("");
-        int[] numbersR = new int [3];
+
+        int[] numbersR = new int[3];
         numbersR[0] = 1;
         numbersR[1] = 2;
         numbersR[2] = 3;
-        {
-            System.out.print(numbersR[2] + ", " + numbersR[1] + ", " + numbersR[0]);
+        for (int i = numbersR.length - 1; i >= 0; i--) {
+            if (i == numbersR.length - 3) {
+                System.out.println(numbersR[i]);
+            } else System.out.print(numbersR[i] + ", ");
         }
-        System.out.println("");
+
         double[] numbersT = {1.57, 7.654, 9.986};
-        {
-            System.out.print(numbersT[2] + ", " + numbersT[1] + ", " + numbersT[0]);
+        for (int x = numbersT.length - 1; x >= 0; x--) {
+            if (x == numbersT.length - 3) {
+                System.out.println(numbersT[x]);
+            } else System.out.print(numbersT[x] + ", ");
         }
-        System.out.println("");
+
         int[] numbersY = {4, 5, 6};
-        {
-            System.out.print(numbersY[2] + ", " + numbersY[1] + ", " + numbersY[0]);
+        for (int y = numbersY.length - 1; y >= 0; y--) {
+            if (y == numbersY.length - 3) {
+                System.out.println(numbersY[y]);
+            } else System.out.print(numbersY[y] + ", ");
         }
-        System.out.println("");
+
+
         // Задача 4.
         System.out.println("");
-        int[] numbersA = new int [3];
+        int[] numbersA = new int[3];
         numbersA[0] = 1;
         numbersA[1] = 2;
         numbersA[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            System.out.println(numbersA[i]+ 1);
+        for (int c = 0; c < numbersA.length; c++) {
+            if (numbersA[c] % 2==0) {
+                System.out.println(numbersA[c]);
+            } else  System.out.println(numbersA[c] +1);
+
         }
-
-
-
-
 
     }
 }
